@@ -1,0 +1,55 @@
+.navtop {min-height: 90px;position: relative}
+.navtop_inner {
+  @media (max-width: $bp-m) {
+    padding: 25px 0;
+  }
+}
+/*Nav icon*/
+#navtop_icon {width: 36px;height: 36px;position: absolute;right: 20px;top: 50px;cursor: pointer;display: none;
+  @media (max-width: $bp-m) {
+    display: block;width: 36px;height: 26px;position: absolute;right: 0px;top: 30px;cursor: pointer;
+  }
+  span {display: block;position: absolute;height: 5px;width: 100%;background: $color-base;opacity: 1;left: 0; @include transition(all, .3s , ease-in-out);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+
+    &:nth-child(1) {top: 0px;}
+    &:nth-child(2) {top: 10px;}
+    &:nth-child(3) {top: 10px;}
+    &:nth-child(4) {top: 20px;}
+  }
+  &.open {z-index: 9999}
+  &.open span:nth-child(1) {top: 18px;width: 0%;left: 50%;}
+  &.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  &.open span:nth-child(3) {
+     -webkit-transform: rotate(-45deg);
+     -moz-transform: rotate(-45deg);
+     transform: rotate(-45deg);
+   }
+  &.open span:nth-child(4) {top: 18px;width: 0%;left: 50%;}
+}
+
+.navtop_collapse {position: absolute;top: 35px;right: 0;
+  @media (max-width: 992px) {
+    position: relative;top: inherit;right: inherit;max-height: 0;overflow: hidden; @include transition(all, 0.5s , ease-in-out);margin: 40px 0 0;
+  }
+  &.open {z-index: 9999;max-height: 1000px;}
+}
+.navtop_lst {@extend %reset-lst;}
+.navtop_item { float: left;padding: 0 10px;
+  a {font-family: Roboto-Black;text-transform: uppercase;color: #000;font-size: $font-size-s;
+    &:hover {color: $color-base;}
+  }
+  @media (max-width: $bp-m){
+    float: none;padding: 10px 0;
+  }
+}
+
+.overlay{background: rgba(0, 0, 0, 0.3);position: fixed;right: 0;top: 0;width: 100%;height: 100%;z-index: 1111;opacity: 0;visibility: hidden;@include transition(all, .3s , ease-in-out);
+  &.open{opacity: 1;visibility: visible;overflow: hidden}
+}

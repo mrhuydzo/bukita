@@ -1,0 +1,7 @@
+.language {display: inline-block;
+  a {text-transform: uppercase;font-size: $font-size-xs;display: inline-block;color: $color-text;
+    &.active {background: $color-base;color: #fff;width: 30px;height: 20px;text-align: center;line-height: 20px;margin: 0 3px; @include border-radius(2px);
+      &:hover {color: #fff}
+    }
+  }
+}

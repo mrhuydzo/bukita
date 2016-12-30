@@ -1,0 +1,36 @@
+#page-contact {}
+.contact_form {background: url(#{$url-img}/bg-contact.jpg) no-repeat 0 0;min-height: 480px;background-size: cover;margin: 0 0 100px;padding: 5%;
+
+  @media (max-width: $bp-m) {
+    margin: 0 0 30px;
+  }
+  @media (max-width: $bp-s) {
+    padding:20px 0;
+  }
+}
+.contact_logo {margin: 20px 0 100px 0;
+  @media (max-width: $bp-sm) {
+    margin: 0 0 20px;
+  }
+}
+.contact_line {margin:  0 0 10px}
+.contact_data {}
+.contact_label {display: block;margin: 0 0 5px;}
+.contact_input {background: #fff;@extend %input-text;display: block;width: 100%}
+.contact_input_content {}
+.contact_input_send {background: #fff;@extend %button;border: none;
+  strong {color: #fff;z-index: 1;position: relative;}
+  &:hover {
+    strong {color: $color-base}
+  }
+}
+
+.contact_info {font-weight: bold}
+.contact_lst {@extend %reset-lst;color: $color-text;font-size: 13px;
+  li {margin: 0 0 10px;
+    a { color: $color-base;
+      &:hover {color: $color-text}
+    }
+  }
+}
+.contact_icon {color: $color-base;margin: 0 15px 0 0;font-size: $font-size-m}

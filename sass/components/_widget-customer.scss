@@ -1,0 +1,23 @@
+.widget_customer {
+  .slick-dots {display: none !important;}
+  .slick-arrow {background: url(#{$url-img}/slider-arrow-small.png) no-repeat 0 0 transparent;width: 14px;height: 25px;display: block;z-index: 1;top: -45px;
+    &.slick-prev {background-position: 0 0;right: 10%;left: inherit;
+      &::before {content: '';}
+      &:hover {background: url(#{$url-img}/slider-arrow-small.png) no-repeat 0 -25px transparent}
+      &:focus {background: url(#{$url-img}/slider-arrow-small.png) no-repeat 0 -25px transparent}
+    }
+    &.slick-next {background-position: -14px 0;right: 0;
+      &::before {content: '';}
+      &:hover {background: url(#{$url-img}/slider-arrow-small.png) no-repeat -14px -25px transparent}
+      &:focus {background: url(#{$url-img}/slider-arrow-small.png) no-repeat -14px -25px transparent}
+    }
+  }
+}
+
+.widget_slide-item {margin: 0;padding: 0;outline: none;@extend %clearfix;}
+.widget_slide_thumb {width: 25%;float: left;margin: 0;
+  img {@include border-radius(5px);max-width: 100%}
+}
+.widget_slide_content {padding: 0 0 0 30%}
+.widget_slide_des {font-style: italic;font-size: $font-size-s}
+.widget_level {font-size: $font-size-xs}

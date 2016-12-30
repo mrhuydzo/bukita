@@ -1,0 +1,32 @@
+#info-business {background: $color-base; color: #fff;font-family: Roboto;
+  @media (max-width: $bp-m) {
+    padding: 0;
+  }
+}
+.info-business_item {@extend %clearfix;position: relative;
+  img {position: absolute;left: 0;top: -107px;
+    @media (max-width: $bp-m) {
+      display: none;
+    }
+  }
+}
+
+.info-business_icon {position: absolute;font-size: 30px;left: 70px;
+  @media (max-width: $bp-m) {
+    position: inherit;font-size: $font-size-sspb
+  }
+}
+.info-business_text {font-size: 18px;padding: 0 0 0 50px;
+  @media (max-width: $bp-m) {
+    padding: inherit !important;text-align: center;margin: 10px 0;
+  }
+}
+.info-business_text-hotline {padding: 0 0 0 150px;
+  .info-business_icon {left: 140px;top: 10px;}
+}
+
+.info-business_text-local {padding: 0 0 0 100px}
+.info-business_text-mail {padding: 0 0 0 100px;
+  .info-business_icon {top: -10px;}
+}
+.info-business_text-small {font-size: 12px}

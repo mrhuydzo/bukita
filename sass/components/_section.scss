@@ -1,0 +1,10 @@
+.section {padding: 40px 0;}
+.section_head {margin: 0 0 30px; text-align: center;@extend %clearfix}
+.section_title {text-transform: uppercase;color: $color-text-heading;padding: 0 0 20px;margin: 0 0 20px; font-size: $font-size-xb;position: relative;font-weight: bold;letter-spacing: 3px;font-family: Roboto-Bold;position: relative;
+  @media (max-width: $bp-xs) {
+    font-size: $font-size-b;
+  }
+  &::before {content: '';position: absolute;width: 170px;height: 1px;background: $color-base;bottom: 0;left: 50%;margin: 0 0 0 -85px}
+  &::after {content: '';position: absolute;width: 40px;height: 3px;background: $color-base;bottom: -1px;left: 50%;margin: 0 0 0 -20px}
+}
+.section_des {font-size: $font-size-s;margin: 0}

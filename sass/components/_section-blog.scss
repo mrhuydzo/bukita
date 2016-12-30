@@ -1,0 +1,18 @@
+#blog {}
+.blog-posts {}
+.post-item {margin: 0 0 30px;@extend %custom_reponsive;}
+.post-thumb {margin: 0 0 20px;position: relative;overflow: hidden;
+  a {
+    img {margin: 0 auto;@extend %image-hover;}
+  }
+}
+.post-header {margin: 0 0 15px}
+.post-title {font-size: $font-size-m;margin: 0;line-height: 24px;
+  a {color: $color-text;font-weight: bold;
+    &:hover {color: $color-base}
+  }
+}
+.post-content {}
+.post-time {background: $color-base;width: 50px;height: 50px;color: #fff;text-align: center;line-height: 22px;display: block;position: absolute;bottom: 0;left: 0}
+.post-date {font-size: 30px}
+.post-month {font-size: 11px;text-transform: uppercase}

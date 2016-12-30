@@ -1,0 +1,8 @@
+.paging {text-align: center;margin: 20px 0;
+  a {display: inline-block;font-size: 14px;color: $color-text;border: solid 1px $color-bg-gray;@include border-radius(2px);min-height: 30px;min-width: 30px;text-align: center;line-height: 30px;padding: 0 5px;margin: 0 5px;@include transition(all, .3s,ease-in-out);
+    &.active {background: $color-base;color: #fff}
+    &.next {}
+    &.back {}
+    &:hover {border-color: $color-base}
+  }
+}
