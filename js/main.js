@@ -42,6 +42,33 @@ jQuery(function($) {
 		]
 	});
 
+	//customer-slider
+	$('#partner_slide').slick({
+		dots: true,
+		slidesToShow: 6,
+		slidesToScroll: 3,
+
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+				}
+			},
+			// You can unslick at a given breakpoint now by adding:
+			// settings: "unslick"
+			// instead of a settings object
+		]
+	});
+
 	//Initiat WOW JS
 	new WOW().init();
 	//smoothScroll

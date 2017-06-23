@@ -1,18 +1,13 @@
-#services{background: $color-bg-gray}
+#services{/*background-repeat: no-repeat;background-position: 50% 50%;*/background: url('../images/bg-service.jpg') no-repeat 50% 50% ;
+  .section_title {color: #fff;
+    &::before,
+    &::after {background: #fff;}
+  }
+  .section_des {color: #fff}
+}
 .our-services {}
-.service-item {font-size: $font-size-s;text-align: center;margin: 0 0 30px; @extend %custom_reponsive;}
-.service-info {}
-.service-thumb {overflow: hidden;
-  a {
-    img {max-width: 100%;@extend %image-hover;}
-  }
-}
-.service-title {background: $color-base;margin: 0;padding: 0 15px;
-  a {display: block;color: #fff;text-transform: uppercase;min-height: 45px;line-height: 45px;font-size: $font-size-s;}
-}
-.service-summary {background: #fff;min-height: 140px;padding: 10px;margin: 0;
-  @media (max-width: $bp-sm) {
-    min-height: inherit;
-  }
-}
-
+.service-item {font-size: $font-size-s;text-align: center;margin: 0 0 30px; }
+.service-thumb {overflow: hidden;margin: 0 0 15px}
+.service-info {text-transform: uppercase;color: #fff;}
+.service-title {font-size: $font-size-s;margin: 0 0 5px;font-family: Roboto}
+.service-title_en {font-family: 'Roboto-light';font-size: 13px;margin: 0}
